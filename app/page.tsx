@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function WelcomePage() {
   return (
     <main className="min-h-screen flex flex-col items-center justify-center px-8 py-16 bg-stone-50">
@@ -15,9 +17,12 @@ export default function WelcomePage() {
           Less shopping. More wearing.
         </p>
 
-        <button className="mt-4 px-10 py-4 bg-stone-900 text-stone-50 rounded-full text-xs uppercase tracking-[0.2em] hover:bg-stone-700 transition-colors">
+        <Link
+          href="/onboarding/adventurousness"
+          className="inline-block mt-4 px-10 py-4 bg-stone-900 text-stone-50 rounded-full text-xs uppercase tracking-[0.2em] hover:bg-stone-700 transition-colors"
+        >
           Begin
-        </button>
+        </Link>
       </div>
     </main>
   );
